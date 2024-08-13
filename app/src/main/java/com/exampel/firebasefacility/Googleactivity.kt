@@ -25,7 +25,6 @@ class Googleactivity : AppCompatActivity() {
     private lateinit var supportFragmentManager: Any
     private lateinit var auth: FirebaseAuth
 
-
     // Initialize variables
     lateinit var bt_sign_in1: SignInButton
     lateinit var googleSignInClient: GoogleSignInClient
@@ -73,13 +72,13 @@ class Googleactivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         // Check condition
         if (requestCode == 100) {
-            Log.e("==-===", "onActivityResult: SUCESS", )
+            Log.e("==-===", "onActivityResult: SUCESS")
 
             // When request code is equal to 100 initialize task
             val signInAccountTask: Task<GoogleSignInAccount> =
                 GoogleSignIn.getSignedInAccountFromIntent(data)
 
-            Log.e("==-===", "onActivityResult: SUCESS ${signInAccountTask.isSuccessful}" )
+            Log.e("==-===", "onActivityResult: SUCESS ${signInAccountTask.isSuccessful}")
             // check condition
             if (signInAccountTask.isSuccessful) {
                 // When google sign in successful initialize string
@@ -102,10 +101,10 @@ class Googleactivity : AppCompatActivity() {
                                 // Check condition
                                 if (task.isSuccessful) {
 
-                                    Log.e("==-===", "onActivityResult: SUCESS ===> 1", )
+                                    Log.e("==-===", "onActivityResult: SUCESS ===> 1")
 
 
-                                    var intent = Intent(this,Profileactivity::class.java)
+                                    var intent = Intent(this, Profileactivity::class.java)
                                     startActivity(intent)
                                     finish()
 
