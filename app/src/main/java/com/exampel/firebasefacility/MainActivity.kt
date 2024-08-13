@@ -14,7 +14,6 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
-
 class MainActivity : AppCompatActivity() {
 
     lateinit var toolbar: Toolbar
