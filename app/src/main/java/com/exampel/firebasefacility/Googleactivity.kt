@@ -25,8 +25,6 @@ class Googleactivity : AppCompatActivity() {
     private lateinit var supportFragmentManager: Any
     private lateinit var auth: FirebaseAuth
 
-    var abc = 10
-
     // Initialize variables
     lateinit var bt_sign_in1: SignInButton
     lateinit var googleSignInClient: GoogleSignInClient
